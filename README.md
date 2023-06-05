@@ -2,10 +2,10 @@
 Aprenda a criar tema ráipido prara Wordpress 
 
 
-## Header\n
+## Header
 wp_head() para css
 
-## Conteúdo\n
+## Conteúdo
 get_header() para header
 
 get_the_title() para título
