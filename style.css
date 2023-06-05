@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: "Avenir Black";
-    src: url(.assets/fonts/AvenirLTStd-Black.otf),
+    src: url(assets/fonts/AvenirLTStd-Black.otf),
         url(assets/fonts/AvenirLTStd-Black.woff);
 }
 
