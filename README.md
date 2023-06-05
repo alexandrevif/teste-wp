@@ -15,4 +15,6 @@ the_content() para conteúdo
 get_the_post_thumbnail_url(get_the_ID()) para url da imagem destaque
 
 get_footer para footer
-Footer\n
+
+## Footer
+wp_footer() para js
