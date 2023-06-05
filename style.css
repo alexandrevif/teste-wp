@@ -187,6 +187,12 @@ section.image .overlay {
     font-family: "Avenir Book" !important;
 }
 
+/* Page Sobre*/
+
+.sobre h1{
+     color: #01758D
+}
+
 /* Responsive */
 
 @media only screen and (max-width: 768px) {
