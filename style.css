@@ -1,0 +1,210 @@
+/*
+	Theme Name: Teste
+    Theme URI: https://teste.com.br/ 
+    Author: Alexandre Felix 
+    Author URI: https://teste.com.br/ 
+    Description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+    Version: 2023
+*/
+
+@font-face {
+    font-family: "Avenir Black";
+    src: url(.assets/fonts/AvenirLTStd-Black.otf),
+        url(assets/fonts/AvenirLTStd-Black.woff);
+}
+
+@font-face {
+    font-family: "Avenir Book";
+    src: url(assets/fonts/AvenirLTStd-Book.otf),
+        url(assets/fonts/AvenirLTStd-Book.woff);
+}
+
+@font-face {
+    font-family: "Avenir Roman";
+    src: url(assets/fonts/AvenirLTStd-Roman.otf),
+        url(assets/fonts/AvenirLTStd-Roman.woff);
+}
+
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    background: #f4f4f4;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h1,
+h5 {
+    font-family: "Avenir Black";
+}
+
+h5 {
+    color: #01758d !important;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+header,
+footer {
+    background: #05cffc;
+}
+
+footer p {
+    color: #fff;
+}
+
+.sobre-link {
+    background: #fff;
+    border-radius: 500px;
+    padding: 5px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #01758d;
+}
+
+section.image {
+    width: 100vw;
+    height: 465px;
+    background: url(assets/img/back-index.png) center no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+}
+
+section.image .overlay {
+    background: #00000080;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* Page Home */
+.cards {
+    position: relative;
+    overflow: hidden;
+    padding-top: 18rem;
+}
+
+.card-title {
+    text-transform: uppercase;
+}
+
+.card {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.card .image {
+    background: url(assets/img/pexels-aleksandar-pasaric-2872767.jpg) center
+        no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    /* border-top-left-radius: var(--bs-border-radius);
+                border-top-right-radius: var(--bs-border-radius); */
+}
+
+.card p {
+    color: #666666;
+    font-size: 14px;
+}
+
+.card a {
+    color: #01758d;
+    text-decoration: none;
+    font-family: "Avenir Book", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.card .badge {
+    position: absolute;
+    right: 0;
+    background: #fff;
+    color: #666666;
+    border-radius: 5000px;
+    padding: 8px 15px;
+    margin: 10px;
+    font-family: "Avenir Book", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+/* Page Post */
+.post-image {
+    background-size: cover !important;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.post {
+    position: relative;
+    padding-top: 18rem;
+}
+
+.post-content {
+    background: #fff;
+    max-width: 800px;
+}
+
+.post-header img {
+    width: 100%;
+}
+
+.post-category {
+    border-radius: 20px;
+    background: #01758d;
+    font-family: "Avenir Book";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    width: fit-content;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.post-header p,
+.author {
+    color: #939393 !important;
+    font-family: "Avenir Book" !important;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+    section.image {
+        height: 260px;
+    }
+
+    .cards {
+        position: relative;
+        overflow: hidden;
+        padding-top: 6rem;
+    }
+
+    .post {
+        padding-top: 7rem;
+    }
+
+    .post-content {
+        background: none;
+    }
+}
